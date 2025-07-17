@@ -1,0 +1,85 @@
+.formSection {
+  padding: 4rem 1.5rem 3rem 1.5rem;
+  background: #fff;
+  color: #1E1E1E;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin-bottom: 2.2rem;
+  color: #00CFFF;
+}
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #f8fcff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0, 207, 255, 0.07);
+  padding: 2.2rem 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+.input, .textarea, select {
+  flex: 1;
+  padding: 0.9rem 1rem;
+  border: 1.5px solid #e0f7fa;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+  color: #1E1E1E;
+  transition: border 0.18s, box-shadow 0.18s;
+  outline: none;
+}
+
+.input:focus, .textarea:focus, select:focus {
+  border-color: #00CFFF;
+  box-shadow: 0 0 0 2px #00cfff33;
+}
+
+.textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.button {
+  background: #00CFFF;
+  color: #1E1E1E;
+  font-weight: bold;
+  padding: 0.95rem 2.5rem;
+  border-radius: 32px;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  box-shadow: 0 4px 24px rgba(0, 207, 255, 0.12);
+}
+
+.button:hover {
+  background: #fff;
+  color: #00CFFF;
+  transform: translateY(-2px) scale(1.04);
+}
+
+@media (max-width: 600px) {
+  .formSection {
+    padding: 2.5rem 0.5rem 2rem 0.5rem;
+  }
+  .form {
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+  .row {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+} 

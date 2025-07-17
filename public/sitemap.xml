@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://example.com/</loc>
+  </url>
+  <url>
+    <loc>https://example.com/#services</loc>
+  </url>
+  <url>
+    <loc>https://example.com/#request</loc>
+  </url>
+  <url>
+    <loc>https://example.com/#how</loc>
+  </url>
+  <url>
+    <loc>https://example.com/#services?service=Website%20Creation</loc>
+  </url>
+  <url>
+    <loc>https://example.com/#services?service=SEO%20Enhancement</loc>
+  </url>
+  <url>
+    <loc>https://example.com/#services?service=Presentation%20Design</loc>
+  </url>
+  <url>
+    <loc>https://example.com/#services?service=System%20Development</loc>
+  </url>
+  <url>
+    <loc>https://example.com/#services?service=Campaign%20Funding</loc>
+  </url>
+</urlset> 
