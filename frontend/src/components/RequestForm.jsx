@@ -1,13 +1,14 @@
 import React, { useState, useEffect, forwardRef, useImperativeHandle } from 'react';
 import emailjs from 'emailjs-com';
 import CountryCodeSelector from './CountryCodeSelector';
+import { useTranslation } from 'react-i18next';
 
 const services = [
-  'Website Creation',
-  'SEO Enhancement',
-  'Presentation Design',
-  'System Development',
-  'Campaign Funding',
+  'website_creation',
+  'seo_enhancement',
+  'presentation_design',
+  'system_development',
+  'campaign_funding',
 ];
 
 // List of country codes with ISO for flag images
@@ -80,6 +81,7 @@ const TEMPLATE_ID = 'template_xxx'; // Replace with your EmailJS template ID
 const USER_ID = 'user_xxx'; // Replace with your EmailJS public key
 
 const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) => {
+  const { t } = useTranslation();
   const [form, setForm] = useState({
     name: '',
     company: '',
@@ -144,7 +146,7 @@ const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) =
 
   return (
     <section id="request">
-      <h2 style={{ textAlign: 'center', fontSize: '2.1rem', fontWeight: 700, color: 'var(--color-accent)', marginBottom: '2rem' }}>Request a Service</h2>
+      <h2 style={{ textAlign: 'center', fontSize: '2.1rem', fontWeight: 700, color: 'var(--color-accent)', marginBottom: '2rem' }}>{t('request.section_title')}</h2>
       <form onSubmit={handleSubmit} style={{
         maxWidth: 600,
         margin: '0 auto',
@@ -162,7 +164,7 @@ const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) =
           <input
             type="text"
             name="name"
-            placeholder="Your Name"
+            placeholder={t('request.name')}
             value={form.name}
             onChange={handleChange}
             required
@@ -171,7 +173,7 @@ const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) =
           <input
             type="text"
             name="company"
-            placeholder="Company Name"
+            placeholder={t('request.company')}
             value={form.company}
             onChange={handleChange}
             required
@@ -182,7 +184,7 @@ const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) =
           <input
             type="text"
             name="job"
-            placeholder="Job Title"
+            placeholder={t('request.job')}
             value={form.job}
             onChange={handleChange}
             required
@@ -199,7 +201,7 @@ const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) =
             <input
               type="tel"
               name="phone"
-              placeholder="Phone Number"
+              placeholder={t('request.phone')}
               value={form.phone}
               onChange={handleChange}
               required
@@ -211,7 +213,7 @@ const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) =
           <input
             type="email"
             name="email"
-            placeholder="Your Email"
+            placeholder={t('request.email')}
             value={form.email}
             onChange={handleChange}
             required
@@ -224,9 +226,9 @@ const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) =
             required
             style={{ flex: 1, padding: '0.9rem 1rem', border: '1.5px solid #e0f7fa', borderRadius: 8, fontSize: '1rem', background: 'var(--color-bg)', color: 'var(--color-text)', transition: 'border 0.18s, box-shadow 0.18s', outline: 'none' }}
           >
-            <option value="">Select Service</option>
+            <option value="">{t('request.select_service')}</option>
             {services.map((s, i) => (
-              <option value={s} key={i}>{s}</option>
+              <option value={s} key={i}>{t(`services.${s}.title`)}</option>
             ))}
           </select>
         </div>
@@ -234,17 +236,17 @@ const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) =
           <input
             type="text"
             name="budget"
-            placeholder="Budget (optional)"
+            placeholder={t('request.budget')}
             value={form.budget}
             onChange={handleChange}
             style={{ flex: 1, padding: '0.9rem 1rem', border: '1.5px solid #e0f7fa', borderRadius: 8, fontSize: '1rem', background: 'var(--color-bg)', color: 'var(--color-text)', transition: 'border 0.18s, box-shadow 0.18s', outline: 'none' }}
           />
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-            <label htmlFor="finishDate" style={{ fontSize: '0.9rem', color: 'var(--color-text-light)' }}>Deadline for your request (optional)</label>
+            <label htmlFor="finishDate" style={{ fontSize: '0.9rem', color: 'var(--color-text-light)' }}>{t('request.deadline_label')}</label>
             <input
               type="date"
               name="finishDate"
-              placeholder="Finish Date (optional)"
+              placeholder={t('request.finish_date')}
               value={form.finishDate}
               onChange={handleChange}
               style={{ flex: 1, padding: '0.9rem 1rem', border: '1.5px solid #e0f7fa', borderRadius: 8, fontSize: '1rem', background: 'var(--color-bg)', color: 'var(--color-text)', transition: 'border 0.18s, box-shadow 0.18s', outline: 'none' }}
@@ -253,7 +255,7 @@ const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) =
         </div>
         <textarea
           name="message"
-          placeholder="Tell us about your project..."
+          placeholder={t('request.message')}
           value={form.message}
           onChange={handleChange}
           required
@@ -275,10 +277,10 @@ const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) =
         onMouseOver={e => { e.target.style.background = 'var(--color-text)'; e.target.style.color = 'var(--color-accent)'; e.target.style.transform = 'scale(1.04)'; }}
         onMouseOut={e => { e.target.style.background = 'var(--color-accent)'; e.target.style.color = 'var(--color-bg)'; e.target.style.transform = 'none'; }}
         >
-          {submitted ? 'Sent!' : 'Send Request'}
+          {submitted ? t('request.sent') : t('request.send')}
         </button>
-        {success && <div style={{ color: 'green', marginTop: 10, textAlign: 'center' }}>{success}</div>}
-        {error && <div style={{ color: 'red', marginTop: 10, textAlign: 'center' }}>{error}</div>}
+        {success && <div style={{ color: 'green', marginTop: 10, textAlign: 'center' }}>{t('request.success')}</div>}
+        {error && <div style={{ color: 'red', marginTop: 10, textAlign: 'center' }}>{t('request.error')}</div>}
       </form>
     </section>
   );

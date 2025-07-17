@@ -1,44 +1,43 @@
 import React, { useRef } from 'react';
 import RequestForm from './RequestForm';
-
-const services = [
-  'Website Creation',
-  'SEO Enhancement',
-  'Presentation Design',
-  'System Development',
-  'Campaign Funding',
-];
-
-const serviceDetails = [
-  {
-    icon: '💻',
-    title: 'Website Creation',
-    desc: 'Modern, responsive websites tailored to your business.'
-  },
-  {
-    icon: '📈',
-    title: 'SEO Enhancement',
-    desc: 'Boost your online presence and search rankings.'
-  },
-  {
-    icon: '🎨',
-    title: 'Presentation Design',
-    desc: 'Professional PowerPoint and digital presentations.'
-  },
-  {
-    icon: '💡',
-    title: 'System Development',
-    desc: 'Custom software and full system solutions.'
-  },
-  {
-    icon: '🚀',
-    title: 'Campaign Funding',
-    desc: 'Support for digital content and campaign launches.'
-  },
-];
+import { useTranslation } from 'react-i18next';
 
 const Services = () => {
+  const { t } = useTranslation();
   const formRef = useRef();
+
+  const serviceDetails = [
+    {
+      icon: '💻',
+      title: t('services.website_creation.title'),
+      desc: t('services.website_creation.desc'),
+      key: 'website_creation',
+    },
+    {
+      icon: '📈',
+      title: t('services.seo_enhancement.title'),
+      desc: t('services.seo_enhancement.desc'),
+      key: 'seo_enhancement',
+    },
+    {
+      icon: '🎨',
+      title: t('services.presentation_design.title'),
+      desc: t('services.presentation_design.desc'),
+      key: 'presentation_design',
+    },
+    {
+      icon: '💡',
+      title: t('services.system_development.title'),
+      desc: t('services.system_development.desc'),
+      key: 'system_development',
+    },
+    {
+      icon: '🚀',
+      title: t('services.campaign_funding.title'),
+      desc: t('services.campaign_funding.desc'),
+      key: 'campaign_funding',
+    },
+  ];
 
   const handleServiceClick = (service) => {
     if (formRef.current && formRef.current.setService) {
@@ -54,12 +53,12 @@ const Services = () => {
   return (
     <>
       <section id="services">
-        <h2 style={{ textAlign: 'center', fontSize: '2.2rem', fontWeight: 700, color: 'var(--color-accent)', marginBottom: '2rem' }}>Our Services</h2>
+        <h2 style={{ textAlign: 'center', fontSize: '2.2rem', fontWeight: 700, color: 'var(--color-accent)', marginBottom: '2rem' }}>{t('services.section_title')}</h2>
         <div className="serviceGrid">
           {serviceDetails.map((service, idx) => (
             <div
               className="serviceBox"
-              key={idx}
+              key={service.key}
               data-aos="zoom-in"
               data-aos-delay={idx * 100}
               onClick={() => handleServiceClick(service.title)}

@@ -9,29 +9,70 @@ import Footer from './components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './App.css';
+import './i18n';
+import i18n from './i18n';
+import { languages } from './i18n';
+
+const RTL_LANGS = ['ar', 'he', 'fa', 'ur'];
+
+function getDefaultLanguage() {
+  // 1. Check sessionStorage
+  const sessionLang = typeof window !== 'undefined' ? sessionStorage.getItem('language') : null;
+  if (sessionLang && languages.some(l => l.code === sessionLang)) return sessionLang;
+  // 2. Check browser language
+  if (typeof navigator !== 'undefined') {
+    const browserLang = navigator.language?.split('-')[0];
+    if (languages.some(l => l.code === browserLang)) return browserLang;
+  }
+  // 3. Fallback
+  return 'en';
+}
+
+function getDefaultTheme() {
+  // 1. Check sessionStorage
+  const sessionTheme = typeof window !== 'undefined' ? sessionStorage.getItem('theme') : null;
+  if (sessionTheme === 'dark' || sessionTheme === 'light') return sessionTheme;
+  // 2. Check browser preference
+  if (typeof window !== 'undefined' && window.matchMedia) {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
+    if (window.matchMedia('(prefers-color-scheme: light)').matches) return 'light';
+  }
+  // 3. Fallback
+  return 'light';
+}
 
 function App() {
-  const [theme, setTheme] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('theme') || 'light';
-    }
-    return 'light';
-  });
+  const [theme, setTheme] = useState(getDefaultTheme);
+  const [language, setLanguage] = useState(getDefaultLanguage);
+  const [direction, setDirection] = useState('ltr');
 
   useEffect(() => {
     AOS.init({ once: true, duration: 800, offset: 60 });
   }, []);
 
   useEffect(() => {
+    i18n.changeLanguage(language);
+    sessionStorage.setItem('language', language);
+  }, [language]);
+
+  useEffect(() => {
     document.body.classList.remove('light-mode', 'dark-mode');
     document.body.classList.add(theme === 'dark' ? 'dark-mode' : 'light-mode');
-    localStorage.setItem('theme', theme);
+    sessionStorage.setItem('theme', theme);
   }, [theme]);
 
+  useEffect(() => {
+    const isRtl = RTL_LANGS.includes(language);
+    setDirection(isRtl ? 'rtl' : 'ltr');
+    document.documentElement.setAttribute('dir', isRtl ? 'rtl' : 'ltr');
+    document.body.style.transition = 'direction 0.3s';
+  }, [language]);
+
   const toggleTheme = () => setTheme((t) => (t === 'light' ? 'dark' : 'light'));
+  const handleLanguageChange = (lang) => setLanguage(lang);
 
   return (
-    <div className={`app-wrapper ${theme === 'dark' ? 'dark-mode' : 'light-mode'}`}> 
+    <div className={`app-wrapper ${theme === 'dark' ? 'dark-mode' : 'light-mode'}`} style={{ transition: 'direction 0.3s' }}> 
       <Helmet>
         <title>TechMate | Digital Services Platform</title>
         <meta name="description" content="TechMate offers web development, SEO, presentations, and system building. Modern, responsive, and animated digital services for any business." />
@@ -45,13 +86,13 @@ function App() {
         <meta name="twitter:description" content="Order web development, SEO, presentations, and more. Fast, professional, and tailored to your needs." />
         <meta name="twitter:image" content="/og-image.png" />
       </Helmet>
-      <Header theme={theme} toggleTheme={toggleTheme} />
+      <Header theme={theme} toggleTheme={toggleTheme} language={language} onLanguageChange={handleLanguageChange} />
       <main style={{ paddingTop: 64 }}>
         <section
           className="section"
           id="hero"
           style={{
-            marginTop: '0rem',
+            marginTop: '0',
             minHeight: 'calc(100vh - 64px)',
             display: 'flex',
             alignItems: 'center',

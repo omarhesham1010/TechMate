@@ -1,0 +1,119 @@
+.wrapper {
+  position: relative;
+  min-width: 120px;
+  font-family: inherit;
+  z-index: 20;
+}
+.selected {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--color-bg);
+  color: var(--color-text);
+  border: 1.5px solid #e0f7fa;
+  border-radius: 8px;
+  padding: 0.5rem 0.7rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 207, 255, 0.04);
+  outline: none;
+  position: relative;
+}
+.selected:focus, .selected[data-dark="true"]:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px #00cfff33;
+}
+.selected[data-dark="true"] {
+  background: #181c23;
+  color: #fff;
+  border: 1.5px solid #232837;
+}
+.globe {
+  font-size: 1.2rem;
+  margin-right: 0.2rem;
+}
+.langName {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.arrow {
+  margin-left: auto;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+.dropdown {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  background: var(--color-bg);
+  border: 1.5px solid #e0f7fa;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 207, 255, 0.13);
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 0.18s, transform 0.18s;
+  max-height: 220px;
+  overflow-y: auto;
+}
+.dropdown.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.dropdown[data-dark="true"] {
+  background: #181c23;
+  color: #fff;
+  border: 1.5px solid #232837;
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.7rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: inherit;
+  transition: background 0.18s, color 0.18s;
+}
+.item:hover, .item:focus {
+  background: #e0f7fa;
+  color: var(--color-accent);
+}
+.item[data-dark="true"]:hover, .item[data-dark="true"]:focus {
+  background: #232837;
+  color: #00CFFF;
+}
+.selectedItem {
+  background: #e0f7fa;
+  color: var(--color-accent);
+}
+.selectedItem[data-dark="true"] {
+  background: #232837;
+  color: #00CFFF;
+}
+.rtlTag {
+  background: #00CFFF;
+  color: #181c23;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border-radius: 6px;
+  padding: 0.1rem 0.5rem;
+  margin-left: 0.5rem;
+}
+@media (max-width: 600px) {
+  .wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+  .dropdown {
+    font-size: 0.98rem;
+    max-height: 180px;
+  }
+} 
