@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import styles from './Header.module.css';
 import LanguageSelector from './LanguageSelector';
 import { useTranslation } from 'react-i18next';
+import { AuthProvider } from './auth/AuthContext';
+import LoginButton from './auth/LoginButton';
 
 const navItems = [
   { label: 'nav.home', href: '#hero' },
@@ -59,7 +61,7 @@ const Header = ({ theme, toggleTheme, language, onLanguageChange }) => {
               <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5" stroke="#00CFFF" strokeWidth="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="#00CFFF" strokeWidth="2" strokeLinecap="round"/></svg>
             )}
           </button>
-          <a href="#" className={styles.signIn}>{t('sign_in', 'Sign In')}</a>
+          <LoginButton />
           <button className={styles.menuBtn} onClick={() => setMenuOpen((v) => !v)} aria-label={t('open_menu', 'Open menu')}>
             <span className={styles.menuIcon} />
           </button>

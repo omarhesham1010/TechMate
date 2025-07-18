@@ -1,0 +1,101 @@
+.googleBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--color-accent);
+  color: var(--color-bg);
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+}
+.googleBtn:hover {
+  background: var(--color-text);
+  box-shadow: 0 4px 24px rgba(66,133,244,0.12);
+  transform: translateY(-2px) scale(1.03);
+}
+.googleIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.profileWrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #fff;
+  border-radius: 999px;
+  padding: 0.4rem 1.2rem 0.4rem 0.4rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #eee;
+}
+.userName {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+  margin-right: 0.5rem;
+}
+.signOutBtn {
+  background: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.4rem 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+.signOutBtn:hover {
+  background: #d32f2f;
+  transform: scale(1.05);
+}
+.loadingBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: #fff;
+  color: #888;
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  cursor: not-allowed;
+}
+.spinner {
+  width: 1.3rem;
+  height: 1.3rem;
+  border: 3px solid #eee;
+  border-top: 3px solid #00cfff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.loadingText {
+  font-size: 1rem;
+  color: #888;
+}
+@media (max-width: 600px) {
+  .profileWrap, .googleBtn, .loadingBtn {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+  }
+  .avatar {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+} 
