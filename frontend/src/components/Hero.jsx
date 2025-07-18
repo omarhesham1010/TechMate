@@ -20,7 +20,7 @@ const Hero = () => {
         <h1 style={{ fontSize: '2.8rem', fontWeight: 700, textAlign: 'center', color: 'var(--color-text)', marginBottom: '1.2rem', letterSpacing: '-1px', lineHeight: 1.1 }}>
           {t('hero.headline')}
           <br />
-          <span style={{ color: 'var(--color-accent)', textShadow: '0 0 50px var(--color-accent)' }}>{t('hero.with_brand', { brand: 'TechMate' })}</span>
+          <span style={{ color: 'var(--color-accent)', textShadow: '0 0 50px var(--color-accent)' }}>{t('hero.with_brand', { brand: t('brand') })}</span>
         </h1>
         <p style={{ fontSize: '1.25rem', color: 'var(--color-text)', marginBottom: '2.2rem', fontWeight: 500, textAlign: 'center', maxWidth: 540 }}>
           {t('hero.subheadline')}
