@@ -37,11 +37,17 @@ const Services = () => {
       desc: t('services.campaign_funding.desc'),
       key: 'campaign_funding',
     },
+    {
+      icon: '❓',
+      title: t('services.other_service.title'),
+      desc: t('services.other_service.desc'),
+      key: 'other_service',
+    },
   ];
 
-  const handleServiceClick = (service) => {
+  const handleServiceClick = (serviceKey) => {
     if (formRef.current && formRef.current.setService) {
-      formRef.current.setService(service);
+      formRef.current.setService(serviceKey); // Pass the key
       const el = document.querySelector('#request');
       if (el) {
         const y = el.getBoundingClientRect().top + window.pageYOffset - 64;
@@ -61,7 +67,7 @@ const Services = () => {
               key={service.key}
               data-aos="zoom-in"
               data-aos-delay={idx * 100}
-              onClick={() => handleServiceClick(service.title)}
+              onClick={() => handleServiceClick(service.key)} // Pass key on click
               style={{ cursor: 'pointer' }}
             >
               <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>{service.icon}</div>

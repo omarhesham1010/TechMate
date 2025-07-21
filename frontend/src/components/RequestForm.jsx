@@ -1,7 +1,9 @@
 import React, { useState, useEffect, forwardRef, useImperativeHandle } from 'react';
 import emailjs from 'emailjs-com';
+emailjs.init('lmWyHFFpP9DEO_7cA');
 import CountryCodeSelector from './CountryCodeSelector';
 import { useTranslation } from 'react-i18next';
+import { useAuth } from './auth/AuthContext'; // Import useAuth hook
 
 const services = [
   'website_creation',
@@ -9,6 +11,7 @@ const services = [
   'presentation_design',
   'system_development',
   'campaign_funding',
+  'other_service',
 ];
 
 // List of country codes with ISO for flag images
@@ -82,6 +85,7 @@ const USER_ID = 'user_xxx'; // Replace with your EmailJS public key
 
 const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) => {
   const { t } = useTranslation();
+  const { user, signInWithGoogle } = useAuth(); // Get user and signInWithGoogle from AuthContext
   const [form, setForm] = useState({
     name: '',
     company: '',
@@ -95,7 +99,7 @@ const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) =
     finishDate: '',
     message: '',
   });
-  const [submitted, setSubmitted] = useState(false);
+  const [isSending, setIsSending] = useState(false); // New state for loading
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
 
@@ -120,30 +124,75 @@ const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) =
 
   const handleSubmit = async e => {
     e.preventDefault();
-    setSubmitted(true);
     setError('');
     setSuccess('');
+
+    // 1. Require Google Sign-In
+    if (!user) {
+      signInWithGoogle();
+      return;
+    }
+
+    setIsSending(true);
+
+    // Prepare variables for admin email
+    const adminVars = {
+      client_name: user.displayName || 'N/A',
+      email: user.email || 'N/A',
+      client_photo: user.photoURL || '',
+      form_name: form.name || 'N/A',
+      company: form.company || 'N/A',
+      job_title: form.job || 'N/A',
+      phone: form.countryIso + ' ' +  form.country + form.phone || 'N/A',
+      form_email: form.email || 'N/A',
+      service: form.service || 'N/A',
+      budget: form.budget || '0',
+      deadline: form.finishDate || 'N/A',
+      details: form.message || 'N/A',
+      to_email: 'techmate1010@gmail.com',
+    };
+
+    // Prepare variables for client confirmation email
+    const clientVars = {
+      name: user.displayName || 'Valued Client',
+      form_name: form.name || 'N/A',
+      company: form.company || 'N/A',
+      job_title: form.job || 'N/A',
+      phone: form.countryIso + ' ' +  form.country + form.phone || 'N/A',
+      form_email: form.email || 'N/A',
+      service: form.service || 'N/A',
+      budget: form.budget || '0',
+      deadline: form.finishDate || 'N/A',
+      details: form.message || 'N/A',
+      to_email: user.email || 'techmate1010@gmail.com',
+    };
+
     try {
-      await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
-        name: form.name,
-        company: form.company,
-        job: form.job,
-        phone: `${form.country} ${form.phone}`,
-        email: form.email,
-        service: form.service,
-        budget: form.budget,
-        finishDate: form.finishDate,
-        message: form.message,
-      }, USER_ID);
-      setSuccess('Your request has been sent successfully!');
+      await Promise.all([
+        emailjs.send(
+          'service_9pqabcd',
+          'template_snnde7m',
+          adminVars
+        )
+        ,
+        emailjs.send(
+          'service_9pqabcd',
+          'template_vui2etp',
+          clientVars
+        )
+      ]);
+      setSuccess('Your request has been sent successfully! A confirmation has been sent to your email.');
       setForm({
         name: '', company: '', job: '', phone: '', country: '+1', countryIso: 'us', email: '', service: '', budget: '', finishDate: '', message: ''
       });
     } catch (err) {
       setError('Failed to send your request. Please try again later.');
+      console.error('EmailJS error:', err);
+    } finally {
+      setIsSending(false);
     }
   };
-
+  
   return (
     <section id="request">
       <h2 style={{ textAlign: 'center', fontSize: '2.1rem', fontWeight: 700, color: 'var(--color-accent)', marginBottom: '2rem' }}>{t('request.section_title')}</h2>
@@ -169,7 +218,7 @@ const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) =
             onChange={handleChange}
             required
             style={{ flex: 1, padding: '0.9rem 1rem', border: '1.5px solid #e0f7fa', borderRadius: 8, fontSize: '1rem', background: 'var(--color-bg)', color: 'var(--color-text)', transition: 'border 0.18s, box-shadow 0.18s', outline: 'none' }}
-          />
+            />
           <input
             type="text"
             name="company"
@@ -178,7 +227,7 @@ const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) =
             onChange={handleChange}
             required
             style={{ flex: 1, padding: '0.9rem 1rem', border: '1.5px solid #e0f7fa', borderRadius: 8, fontSize: '1rem', background: 'var(--color-bg)', color: 'var(--color-text)', transition: 'border 0.18s, box-shadow 0.18s', outline: 'none' }}
-          />
+            />
         </div>
         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           <input
@@ -189,7 +238,7 @@ const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) =
             onChange={handleChange}
             required
             style={{ flex: 1, padding: '0.9rem 1rem', border: '1.5px solid #e0f7fa', borderRadius: 8, fontSize: '1rem', background: 'var(--color-bg)', color: 'var(--color-text)', transition: 'border 0.18s, box-shadow 0.18s', outline: 'none' }}
-          />
+            />
           <div style={{ display: 'flex', flex: 1, gap: '0.5rem', alignItems: 'center' }}>
             <CountryCodeSelector
               value={form.country}
@@ -197,7 +246,7 @@ const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) =
               countryCodes={countryCodes}
               darkMode={darkMode}
               label={null}
-            />
+              />
             <input
               type="tel"
               name="phone"
@@ -206,7 +255,7 @@ const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) =
               onChange={handleChange}
               required
               style={{ flex: 1, padding: '0.9rem 1rem', border: '1.5px solid #e0f7fa', borderRadius: 8, fontSize: '1rem', background: 'var(--color-bg)', color: 'var(--color-text)', transition: 'border 0.18s, box-shadow 0.18s', outline: 'none' }}
-            />
+              />
           </div>
         </div>
         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
@@ -218,14 +267,14 @@ const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) =
             onChange={handleChange}
             required
             style={{ flex: 1, padding: '0.9rem 1rem', border: '1.5px solid #e0f7fa', borderRadius: 8, fontSize: '1rem', background: 'var(--color-bg)', color: 'var(--color-text)', transition: 'border 0.18s, box-shadow 0.18s', outline: 'none' }}
-          />
+            />
           <select
             name="service"
             value={form.service}
             onChange={handleChange}
             required
             style={{ flex: 1, padding: '0.9rem 1rem', border: '1.5px solid #e0f7fa', borderRadius: 8, fontSize: '1rem', background: 'var(--color-bg)', color: 'var(--color-text)', transition: 'border 0.18s, box-shadow 0.18s', outline: 'none' }}
-          >
+            >
             <option value="">{t('request.select_service')}</option>
             {services.map((s, i) => (
               <option value={s} key={i}>{t(`services.${s}.title`)}</option>
@@ -240,7 +289,7 @@ const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) =
             value={form.budget}
             onChange={handleChange}
             style={{ flex: 1, padding: '0.9rem 1rem', border: '1.5px solid #e0f7fa', borderRadius: 8, fontSize: '1rem', background: 'var(--color-bg)', color: 'var(--color-text)', transition: 'border 0.18s, box-shadow 0.18s', outline: 'none' }}
-          />
+            />
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
             <label htmlFor="finishDate" style={{ fontSize: '0.9rem', color: 'var(--color-text-light)' }}>{t('request.deadline_label')}</label>
             <input
@@ -250,7 +299,7 @@ const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) =
               value={form.finishDate}
               onChange={handleChange}
               style={{ flex: 1, padding: '0.9rem 1rem', border: '1.5px solid #e0f7fa', borderRadius: 8, fontSize: '1rem', background: 'var(--color-bg)', color: 'var(--color-text)', transition: 'border 0.18s, box-shadow 0.18s', outline: 'none' }}
-            />
+              />
           </div>
         </div>
         <textarea
@@ -260,8 +309,8 @@ const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) =
           onChange={handleChange}
           required
           style={{ minHeight: 90, resize: 'vertical', padding: '0.9rem 1rem', border: '1.5px solid #e0f7fa', borderRadius: 8, fontSize: '1rem', background: 'var(--color-bg)', color: 'var(--color-text)', transition: 'border 0.18s, box-shadow 0.18s', outline: 'none' }}
-        />
-        <button type="submit" style={{
+          />
+        <button type="submit" disabled={isSending} style={{
           background: 'var(--color-accent)',
           color: 'var(--color-bg)',
           fontWeight: 700,
@@ -269,18 +318,19 @@ const RequestForm = forwardRef(({ preselectedService, darkMode = false }, ref) =
           borderRadius: 32,
           fontSize: '1.1rem',
           border: 'none',
-          cursor: 'pointer',
+          cursor: isSending ? 'not-allowed' : 'pointer',
           marginTop: '0.5rem',
-          transition: 'background 0.2s, color 0.2s, transform 0.2s',
+          transition: 'background 0.2s, color 0.2s, transform 0.2s, opacity 0.2s',
           boxShadow: '0 4px 24px rgba(0, 207, 255, 0.12)',
+          opacity: isSending ? 0.7 : 1,
         }}
-        onMouseOver={e => { e.target.style.background = 'var(--color-text)'; e.target.style.color = 'var(--color-accent)'; e.target.style.transform = 'scale(1.04)'; }}
-        onMouseOut={e => { e.target.style.background = 'var(--color-accent)'; e.target.style.color = 'var(--color-bg)'; e.target.style.transform = 'none'; }}
+        onMouseOver={e => { if (!isSending) e.target.style.transform = 'scale(1.04)'; }}
+        onMouseOut={e => { if (!isSending) e.target.style.transform = 'none'; }}
         >
-          {submitted ? t('request.sent') : t('request.send')}
+          {isSending ? t('request.sending') : t('request.send')}
         </button>
-        {success && <div style={{ color: 'green', marginTop: 10, textAlign: 'center' }}>{t('request.success')}</div>}
-        {error && <div style={{ color: 'red', marginTop: 10, textAlign: 'center' }}>{t('request.error')}</div>}
+        {error && <div style={{ color: '#f44336', textAlign: 'center', marginTop: '1rem' }}>{error}</div>}
+        {success && <div style={{ color: '#4caf50', textAlign: 'center', marginTop: '1rem' }}>{success}</div>}
       </form>
     </section>
   );

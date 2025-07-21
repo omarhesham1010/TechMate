@@ -28,7 +28,11 @@ const resources = {
         },
         campaign_funding: {
           title: "Campaign Funding",
-          desc: "Support for digital content and campaign launches.",
+          desc: "Support for launching and funding your marketing campaigns.",
+        },
+        other_service: {
+          title: "Other",
+          desc: "Have a different request? Let us know how we can help.",
         },
       },
       contact: "Contact",
@@ -50,6 +54,14 @@ const resources = {
         personalized: { title: "Personalized Service", desc: "Solutions tailored to your needs and budget." },
         communication: { title: "Real Communication", desc: "Stay in touch with our team throughout your project." },
         trust: { title: "Trust & Security", desc: "Your data and ideas are safe and confidential." },
+        campaign_funding: {
+          title: "Financement de Campagne",
+          desc: "Soutien pour le lancement et le financement de vos campagnes marketing.",
+        },
+        other_service: {
+          title: "Autre",
+          desc: "Vous avez une autre demande ? Dites-nous comment nous pouvons vous aider.",
+        },
       },
       testimonials: {
         section_title: "What Our Clients Say",
@@ -106,7 +118,11 @@ const resources = {
         },
         campaign_funding: {
           title: "تمويل الحملات",
-          desc: "دعم للمحتوى الرقمي وإطلاق الحملات.",
+          desc: "دعم لإطلاق وتمويل حملاتك التسويقية.",
+        },
+        other_service: {
+          title: "أخرى",
+          desc: "هل لديك طلب مختلف؟ دعنا نعرف كيف يمكننا المساعدة.",
         },
       },
       contact: "اتصل",
@@ -128,6 +144,14 @@ const resources = {
         personalized: { title: "خدمة مخصصة", desc: "حلول مصممة حسب احتياجاتك وميزانيتك." },
         communication: { title: "تواصل حقيقي", desc: "ابقَ على تواصل مع فريقنا طوال مشروعك." },
         trust: { title: "ثقة وأمان", desc: "بياناتك وأفكارك آمنة وسرية." },
+        campaign_funding: {
+          title: "تمويل الحملات",
+          desc: "دعم لإطلاق وتمويل حملاتك التسويقية.",
+        },
+        other_service: {
+          title: "أخرى",
+          desc: "هل لديك طلب مختلف؟ دعنا نعرف كيف يمكننا المساعدة.",
+        },
       },
       testimonials: {
         section_title: "ماذا يقول عملاؤنا",
@@ -184,7 +208,11 @@ const resources = {
         },
         campaign_funding: {
           title: "Financement de campagnes",
-          desc: "Soutien pour le contenu digital et le lancement de campagnes.",
+          desc: "Soutien pour le lancement et le financement de vos campagnes marketing.",
+        },
+        other_service: {
+          title: "Autre",
+          desc: "Vous avez une autre demande ? Dites-nous comment nous pouvons vous aider.",
         },
       },
       contact: "Contact",
@@ -206,6 +234,14 @@ const resources = {
         personalized: { title: "Service personnalisé", desc: "Des solutions adaptées à vos besoins et à votre budget." },
         communication: { title: "Communication réelle", desc: "Restez en contact avec notre équipe tout au long de votre projet." },
         trust: { title: "Confiance & Sécurité", desc: "Vos données et idées sont sûres et confidentielles." },
+        campaign_funding: {
+          title: "Financement de Campagne",
+          desc: "Soutien pour le lancement et le financement de vos campagnes marketing.",
+        },
+        other_service: {
+          title: "Autre",
+          desc: "Vous avez une autre demande ? Dites-nous comment nous pouvons vous aider.",
+        },
       },
       testimonials: {
         section_title: "Ce que disent nos clients",
@@ -262,7 +298,11 @@ const resources = {
         },
         campaign_funding: {
           title: "Financiación de campañas",
-          desc: "Apoyo para contenido digital y lanzamientos de campañas.",
+          desc: "Apoyo para lanzar y financiar sus campañas de marketing.",
+        },
+        other_service: {
+          title: "Otro",
+          desc: "¿Tiene una solicitud diferente? Háganos saber cómo podemos ayudar.",
         },
       },
       contact: "Contacto",
@@ -284,6 +324,14 @@ const resources = {
         personalized: { title: "Servicio personalizado", desc: "Soluciones adaptadas a tus necesidades y presupuesto." },
         communication: { title: "Comunicación real", desc: "Mantente en contacto con nuestro equipo durante tu proyecto." },
         trust: { title: "Confianza y seguridad", desc: "Tus datos e ideas están seguros y son confidenciales." },
+        campaign_funding: {
+          title: "Financiamiento de Campañas",
+          desc: "Apoyo para lanzar y financiar sus campañas de marketing.",
+        },
+        other_service: {
+          title: "Otro",
+          desc: "¿Tiene una solicitud diferente? Háganos saber cómo podemos ayudar.",
+        },
       },
       testimonials: {
         section_title: "Lo que dicen nuestros clientes",
@@ -326,7 +374,11 @@ const resources = {
         seo_enhancement: { title: "SEO优化", desc: "提升您的在线影响力和搜索排名。" },
         presentation_design: { title: "演示设计", desc: "专业的PPT和数字演示。" },
         system_development: { title: "系统开发", desc: "定制软件和完整系统解决方案。" },
-        campaign_funding: { title: "活动筹资", desc: "支持数字内容和活动启动。" },
+        campaign_funding: { title: "活动筹资", desc: "支持启动和资助您的营销活动。" },
+        other_service: {
+          title: "其他",
+          desc: "有不同的要求吗？让我们知道我们如何能提供帮助。"
+        },
       },
       contact: "联系",
       'nav.home': "首页",
@@ -347,6 +399,14 @@ const resources = {
         personalized: { title: "个性化服务", desc: "根据您的需求和预算量身定制解决方案。" },
         communication: { title: "真实沟通", desc: "在整个项目期间与我们的团队保持联系。" },
         trust: { title: "信任与安全", desc: "您的数据和想法安全保密。" },
+        campaign_funding: {
+          title: "活动资金",
+          desc: "支持启动和资助您的营销活动。"
+        },
+        other_service: {
+          title: "其他",
+          desc: "有不同的要求吗？让我们知道我们如何能提供帮助。"
+        },
       },
       testimonials: {
         section_title: "客户评价",
@@ -388,7 +448,11 @@ const resources = {
         seo_enhancement: { title: "SEO-оптимизация", desc: "Улучшите свое онлайн-присутствие и позиции в поиске." },
         presentation_design: { title: "Дизайн презентаций", desc: "Профессиональные презентации и PowerPoint." },
         system_development: { title: "Разработка систем", desc: "Индивидуальное ПО и комплексные решения." },
-        campaign_funding: { title: "Финансирование кампаний", desc: "Поддержка цифрового контента и запусков." },
+        campaign_funding: { title: "Финансирование кампаний", desc: "Поддержка для запуска и финансирования ваших маркетинговых кампаний." },
+        other_service: {
+          title: "Другое",
+          desc: "У вас есть другой запрос? Дайте нам знать, как мы можем помочь.",
+        },
       },
       contact: "Контакт",
       'nav.home': "Главная",
@@ -409,6 +473,14 @@ const resources = {
         personalized: { title: "Индивидуальный подход", desc: "Решения под ваши задачи и бюджет." },
         communication: { title: "Настоящее общение", desc: "Оставайтесь на связи с нашей командой." },
         trust: { title: "Доверие и безопасность", desc: "Ваши данные и идеи в безопасности." },
+        campaign_funding: {
+          title: "Финансирование кампаний",
+          desc: "Поддержка для запуска и финансирования ваших маркетинговых кампаний.",
+        },
+        other_service: {
+          title: "Другое",
+          desc: "У вас есть другой запрос? Дайте нам знать, как мы можем помочь.",
+        },
       },
       testimonials: {
         section_title: "Отзывы клиентов",
@@ -451,6 +523,10 @@ const resources = {
         presentation_design: { title: "Präsentationsdesign", desc: "Professionelle PowerPoint- und Digitalpräsentationen." },
         system_development: { title: "Systementwicklung", desc: "Individuelle Software und Komplettlösungen." },
         campaign_funding: { title: "Kampagnenfinanzierung", desc: "Unterstützung für digitale Inhalte und Kampagnenstarts." },
+        other_service: {
+          title: "Sonstiges",
+          desc: "Haben Sie eine andere Anfrage? Lassen Sie uns wissen, wie wir helfen können.",
+        },
       },
       contact: "Kontakt",
       'nav.home': "Startseite",
@@ -471,6 +547,14 @@ const resources = {
         personalized: { title: "Personalisierter Service", desc: "Lösungen, die auf Ihre Bedürfnisse und Ihr Budget zugeschnitten sind." },
         communication: { title: "Echte Kommunikation", desc: "Bleiben Sie während Ihres Projekts mit unserem Team in Kontakt." },
         trust: { title: "Vertrauen & Sicherheit", desc: "Ihre Daten und Ideen sind sicher und vertraulich." },
+        campaign_funding: {
+          title: "Kampagnenfinanzierung",
+          desc: "Unterstützung für digitale Inhalte und Kampagnenstarts.",
+        },
+        other_service: {
+          title: "Sonstiges",
+          desc: "Haben Sie eine andere Anfrage? Lassen Sie uns wissen, wie wir helfen können.",
+        },
       },
       testimonials: {
         section_title: "Was unsere Kunden sagen",
@@ -513,6 +597,10 @@ const resources = {
         presentation_design: { title: "Sunu tasarımı", desc: "Profesyonel PowerPoint ve dijital sunumlar." },
         system_development: { title: "Sistem geliştirme", desc: "Özel yazılım ve tam sistem çözümleri." },
         campaign_funding: { title: "Kampanya finansmanı", desc: "Dijital içerik ve kampanyaları destekleyin." },
+        other_service: {
+          title: "Diğer",
+          desc: "Farklı bir talebiniz mi var? Nasıl yardımcı olabileceğimizi bize bildirin.",
+        },
       },
       contact: "İletişim",
       'nav.home': "Ana Sayfa",
@@ -533,6 +621,14 @@ const resources = {
         personalized: { title: "Özel hizmet", desc: "İhtiyaçlarınıza ve bütçenize göre çözümler." },
         communication: { title: "Gerçek iletişim", desc: "Projeniz boyunca ekibimizle iletişimde kalın." },
         trust: { title: "Güven ve Güvenliği", desc: "Verileriniz ve fikirleriniz güvenli ve gizli." },
+        campaign_funding: {
+          title: "Kampanya Fonlaması",
+          desc: "Pazarlama kampanyalarınızı başlatma ve finanse etme desteği.",
+        },
+        other_service: {
+          title: "Diğer",
+          desc: "Farklı bir talebiniz mi var? Nasıl yardımcı olabileceğimizi bize bildirin.",
+        },
       },
       testimonials: {
         section_title: "Müşterilerimizin söylediği",
@@ -575,6 +671,10 @@ const resources = {
         presentation_design: { title: "עיצוב תיבות", desc: "הצגות PowerPoint והצגות דיגיטליות מקצועיות." },
         system_development: { title: "פיתוח מערכות", desc: "תוכנה מותאמת ופתרונות מערכת מלאים." },
         campaign_funding: { title: "הקמת ממשקלות", desc: "תמיכה בתוכן דיגיטלי והפצת ממשקלות." },
+        other_service: {
+          title: "אחר",
+          desc: "יש לך בקשה אחרת? ספר לנו איך אנחנו יכולים לעזור.",
+        },
       },
       contact: "יצירת קשר",
       'nav.home': "דף הבית",
@@ -595,6 +695,14 @@ const resources = {
         personalized: { title: "שירות מותאם", desc: "פתרונות מותאמים לצרכיכם ולתקציב שלך." },
         communication: { title: "תקשורת אמיתית", desc: "הישארו בקשר עם הצוות שלנו במהלך הפרויקט." },
         trust: { title: "סמכות ובטיחות", desc: "נתוניכם והרעיונות שלך בטוחים וסודיים." },
+        campaign_funding: {
+          title: "הקמת ממשקלות",
+          desc: "תמיכה בתוכן דיגיטלי והפצת ממשקלות.",
+        },
+        other_service: {
+          title: "אחר",
+          desc: "יש לך בקשה אחרת? ספר לנו איך אנחנו יכולים לעזור.",
+        },
       },
       testimonials: {
         section_title: "מה שלקוחותינו מגיבים",
@@ -637,6 +745,10 @@ const resources = {
         presentation_design: { title: "طراحی ارائه", desc: "ارائه‌های احترافی و عددی PowerPoint." },
         system_development: { title: "توسعه سیستم", desc: "نرم‌افزار مخصوص و راه‌حل‌های کامل." },
         campaign_funding: { title: "مالیات کمپین", desc: "پشتیبانی از محتوای دیجیتالی و راه‌اندازی کمپین." },
+        other_service: {
+          title: "سایر",
+          desc: "درخواست دیگری دارید؟ به ما بگویید چگونه می‌توانیم کمک کنیم.",
+        },
       },
       contact: "تماس",
       'nav.home': "خانه",
@@ -657,6 +769,14 @@ const resources = {
         personalized: { title: "خدمت مخصوص", desc: "راه‌حل‌هایی که بر اساس نیازها و بودجه شما طراحی شده‌اند." },
         communication: { title: "تماس واقعی", desc: "در طول پروژه با تیم ما در ارتباط باشید." },
         trust: { title: "امیدواری و امان", desc: "داده‌های و ایده‌های شما امن و خصوصی هستند." },
+        campaign_funding: {
+          title: "مالیات کمپین",
+          desc: "پشتیبانی از محتوای دیجیتالی و راه‌اندازی کمپین.",
+        },
+        other_service: {
+          title: "سایر",
+          desc: "درخواست دیگری دارید؟ به ما بگویید چگونه می‌توانیم کمک کنیم.",
+        },
       },
       testimonials: {
         section_title: "چیزی که مشتریان ما می‌گویند",
@@ -699,6 +819,10 @@ const resources = {
         presentation_design: { title: "پریزنٹیشن ڈیزائن", desc: "پروفیشنل پاورپوائنٹ اور ڈیجیٹل پریزنٹیشنز۔" },
         system_development: { title: "سسٹم ڈیولپمنٹ", desc: "کسٹم سافٹ ویئر اور مکمل سسٹم حل۔" },
         campaign_funding: { title: "مہم کی فنڈنگ", desc: "ڈیجیٹل مواد اور مہم کے آغاز کے لیے سپورٹ۔" },
+        other_service: {
+          title: "دیگر",
+          desc: "کیا آپ کی کوئی مختلف درخواست ہے؟ ہمیں بتائیں کہ ہم کس طرح مدد کرسکتے ہیں۔"
+        },
       },
       contact: "رابطہ",
       'nav.home': "ہوم",
@@ -719,6 +843,14 @@ const resources = {
         personalized: { title: "خدمة مخصوص", desc: "حلول مصمم حسب احتياجاتك وميزانيتك." },
         communication: { title: "تواصل حقيقي", desc: "ابقَ على تواصل مع فريقنا طوال مشروعك." },
         trust: { title: "اعتماد اور سیکیورٹی", desc: "بياناتك وأفكارك آمنة وسرية." },
+        campaign_funding: {
+          title: "مہم کی فنڈنگ",
+          desc: "آپ کی مارکیٹنگ مہموں کو شروع کرنے اور فنڈ کرنے کے لئے معاونت۔"
+        },
+        other_service: {
+          title: "سایر",
+          desc: "درخواست دیگری دارید؟ به ما بگویید چگونه می‌توانیم کمک کنیم.",
+        },
       },
       testimonials: {
         section_title: "ہمارے کلائنٹس کیا کہتے ہیں",
@@ -761,6 +893,10 @@ const resources = {
         presentation_design: { title: "प्रस्तुति डिज़ाइन", desc: "पेशेवर पावरपॉइंट और डिजिटल प्रस्तुतियाँ।" },
         system_development: { title: "सिस्टम विकास", desc: "कस्टम सॉफ़्टवेयर और पूर्ण सिस्टम समाधान।" },
         campaign_funding: { title: "अभियान फंडिंग", desc: "डिजिटल सामग्री और अभियान लॉन्च के लिए समर्थन।" },
+        other_service: {
+          title: "अन्य",
+          desc: "क्या आपका कोई अलग अनुरोध है? हमें बताएं कि हम कैसे मदद कर सकते हैं।"
+        },
       },
       contact: "संपर्क करें",
       'nav.home': "होम",
@@ -781,6 +917,14 @@ const resources = {
         personalized: { title: "व्यक्तिगत सेवा", desc: "आपकी आवश्यकताओं और बजट के अनुसार समाधान।" },
         communication: { title: "वास्तविक संचार", desc: "अपने प्रोजेक्ट के दौरान हमारी टीम के साथ संपर्क में रहें।" },
         trust: { title: "विश्वास और सुरक्षा", desc: "आपका डेटा और विचार सुरक्षित और गोपनीय हैं।" },
+        campaign_funding: {
+          title: "अभियान अनुदान",
+          desc: "आपके विपणन अभियानों को लॉन्च करने और अनुदान देने के लिए समर्थन।"
+        },
+        other_service: {
+          title: "अन्य",
+          desc: "क्या आपका कोई अलग अनुरोध है? हमें बताएं कि हम कैसे मदद कर सकते हैं।"
+        },
       },
       testimonials: {
         section_title: "हमारे ग्राहक क्या कहते हैं",
@@ -823,6 +967,10 @@ const resources = {
         presentation_design: { title: "プレゼンテーションデザイン", desc: "プロフェッショナルなPowerPointとデジタルプレゼン。" },
         system_development: { title: "システム開発", desc: "カスタムソフトウェアとフルシステムソリューション。" },
         campaign_funding: { title: "キャンペーン資金調達", desc: "デジタルコンテンツとキャンペーン立ち上げのサポート。" },
+        other_service: {
+          title: "その他",
+          desc: "他にリクエストはありますか？どのようにお手伝いできるかお知らせください。"
+        },
       },
       contact: "お問い合わせ",
       'nav.home': "ホーム",
@@ -843,6 +991,14 @@ const resources = {
         personalized: { title: "パーソナライズサービス", desc: "ニーズと予算に合わせたソリューション。" },
         communication: { title: "リアルなコミュニケーション", desc: "プロジェクト中は常にチームと連絡。" },
         trust: { title: "信頼と安全", desc: "データとアイデアは安全で機密。" },
+        campaign_funding: {
+          title: "キャンペーン資金調達",
+          desc: "マーケティングキャンペーンの立ち上げと資金調達のサポート。"
+        },
+        other_service: {
+          title: "その他",
+          desc: "他にリクエストはありますか？どのようにお手伝いできるかお知らせください。"
+        },
       },
       testimonials: {
         section_title: "お客様の声",
@@ -884,7 +1040,11 @@ const resources = {
         seo_enhancement: { title: "Aprimoramento de SEO", desc: "Aumente sua presença em línea e ranking de busca." },
         presentation_design: { title: "Design de apresentações", desc: "Apresentações PowerPoint e digitais profissionais." },
         system_development: { title: "Desenvolvimento de sistemas", desc: "Software personalizado e soluções completas." },
-        campaign_funding: { title: "Financiamento de campanhas", desc: "Apoio para conteúdo digital e lançamentos de campanhas." },
+        campaign_funding: { title: "Financiamento de campanhas", desc: "Apoio para lançamento e financiamento de suas campanhas de marketing." },
+        other_service: {
+          title: "Outro",
+          desc: "Tem um pedido diferente? Diga-nos como podemos ajudar.",
+        },
       },
       contact: "Contato",
       'nav.home': "Início",
@@ -905,6 +1065,14 @@ const resources = {
         personalized: { title: "Serviço personalizado", desc: "Soluções sob medida para suas necessidades e orçamento." },
         communication: { title: "Comunicação real", desc: "Fique em contato com nossa equipe durante seu projeto." },
         trust: { title: "Confiança & Segurança", desc: "Seus dados e ideias estão seguros e confidenciais." },
+        campaign_funding: {
+          title: "Financiamento de Campanhas",
+          desc: "Apoio para lançamento e financiamento de suas campanhas de marketing.",
+        },
+        other_service: {
+          title: "Outro",
+          desc: "Tem um pedido diferente? Diga-nos como podemos ajudar.",
+        },
       },
       testimonials: {
         section_title: "O que nossos clientes dizem",
@@ -947,6 +1115,10 @@ const resources = {
         presentation_design: { title: "Design di presentazioni", desc: "Presentazioni PowerPoint e digitali professionali." },
         system_development: { title: "Sviluppo di sistemi", desc: "Software personalizzato e soluzioni complete." },
         campaign_funding: { title: "Finanziamento campagne", desc: "Supporto per contenuti digitali e lanci di campagne." },
+        other_service: {
+          title: "Altro",
+          desc: "Hai una richiesta diversa? Facci sapere come possiamo aiutarti.",
+        },
       },
       contact: "Contatto",
       'nav.home': "Home",
@@ -967,6 +1139,14 @@ const resources = {
         personalized: { title: "Servizio personalizzato", desc: "Soluzioni su misura per le tue esigenze e il tuo budget." },
         communication: { title: "Comunicazione reale", desc: "Rimani in contatto con il nostro team durante il tuo progetto." },
         trust: { title: "Fiducia & Sicurezza", desc: "I tuoi dati e le tue idee sono sicuri e riservati." },
+        campaign_funding: {
+          title: "Finanziamento Campagne",
+          desc: "Supporto per contenuti digitali e lanci di campagne.",
+        },
+        other_service: {
+          title: "Altro",
+          desc: "Hai una richiesta diversa? Facci sapere come possiamo aiutarti.",
+        },
       },
       testimonials: {
         section_title: "Cosa dicono i nostri clienti",
@@ -1009,6 +1189,10 @@ const resources = {
         presentation_design: { title: "Desain Presentasi", desc: "Presentasi PowerPoint dan digital profesional." },
         system_development: { title: "Pengembangan Sistem", desc: "Perangkat lunak khusus dan solusi sistem lengkap." },
         campaign_funding: { title: "Pendanaan Kampanye", desc: "Dukungan untuk konten digital dan lancar kampanye." },
+        other_service: {
+          title: "Lainnya",
+          desc: "Apakah Anda memiliki permintaan lain? Beritahu kami bagaimana kami bisa membantu.",
+        },
       },
       contact: "Kontak",
       'nav.home': "Beranda",
@@ -1029,6 +1213,14 @@ const resources = {
         personalized: { title: "Layanan Pribadi", desc: "Solusi yang disesuaikan dengan kebutuhan dan anggaran Anda." },
         communication: { title: "Komunikasi Nyata", desc: "Projeniz boyunca ekibimizle iletişimde kalın." },
         trust: { title: "Güven & Güvenliği", desc: "Verileriniz ve fikirleriniz güvenli ve gizli." },
+        campaign_funding: {
+          title: "Kampanya Fonlaması",
+          desc: "Pazarlama kampanyalarınızı başlatma ve finanse etme desteği.",
+        },
+        other_service: {
+          title: "Lainnya",
+          desc: "Apakah Anda memiliki permintaan lain? Beritahu kami bagaimana kami bisa membantu.",
+        },
       },
       testimonials: {
         section_title: "Apa Kata Klien Kami",
@@ -1071,6 +1263,10 @@ const resources = {
         presentation_design: { title: "ออกแบบงานนำเสนอ", desc: "งานนำเสนอ PowerPoint และดิจิทัลแบบมืออาชีพ" },
         system_development: { title: "พัฒนาระบบ", desc: "ซอฟต์แวร์ที่กำหนดเองและโซลูชันระบบครบวงจร" },
         campaign_funding: { title: "ระดมทุนแคมเปญ", desc: "สนับสนุนเนื้อหาดิจิทัลและการเปิดตัวแคมเปญ" },
+        other_service: {
+          title: "อื่น ๆ",
+          desc: "มีคำขออื่นหรือไม่? แจ้งให้เราทราบว่าเราจะช่วยได้อย่างไร"
+        },
       },
       contact: "ติดต่อ",
       'nav.home': "หน้าแรก",
@@ -1091,6 +1287,14 @@ const resources = {
         personalized: { title: "บริการเฉพาะบุคคล", desc: "โซลูชันที่ปรับให้เหมาะกับความต้องการและงบประมาณของคุณ" },
         communication: { title: "การสื่อสารจริง", desc: "ติดต่อกับทีมของเราตลอดโปรเจกต์ของคุณ" },
         trust: { title: "ความไว้วางใจ & ความปลอดภัย", desc: "ข้อมูลและไอเดียของคุณปลอดภัยและเป็นความลับ" },
+        campaign_funding: {
+          title: "ระดมทุนแคมเปญ",
+          desc: "การสนับสนุนสำหรับการเปิดตัวและการระดมทุนแคมเปญการตลาดของคุณ"
+        },
+        other_service: {
+          title: "อื่น ๆ",
+          desc: "มีคำขออื่นหรือไม่? แจ้งให้เราทราบว่าเราจะช่วยได้อย่างไร"
+        },
       },
       testimonials: {
         section_title: "สิ่งที่ลูกค้าของเราพูด",
@@ -1133,6 +1337,10 @@ const resources = {
         presentation_design: { title: "프레젠테이션 디자인", desc: "전문적인 파워포인트 및 디지털 프레젠테이션." },
         system_development: { title: "시스템 개발", desc: "맞춤형 소프트웨어 및 전체 시스템 솔루션." },
         campaign_funding: { title: "캠페인 펀딩", desc: "디지털 콘텐츠 및 캠페인 시작 지원." },
+        other_service: {
+          title: "기타",
+          desc: "다른 요청이 있으신가요? 저희가 어떻게 도와드릴 수 있는지 알려주세요.",
+        },
       },
       contact: "문의",
       'nav.home': "홈",
@@ -1153,6 +1361,14 @@ const resources = {
         personalized: { title: "맞춤 서비스", desc: "귀하의 요구와 예산에 맞는 솔루션." },
         communication: { title: "실제 소통", desc: "프로젝트 동안 팀과 소통하세요." },
         trust: { title: "신뢰 & 보안", desc: "귀하의 데이터와 아이디어는 안전하고 기밀입니다." },
+        campaign_funding: {
+          title: "캠페인 펀딩",
+          desc: "디지털 콘텐츠 및 캠페인 시작 지원.",
+        },
+        other_service: {
+          title: "기타",
+          desc: "다른 요청이 있으신가요? 저희가 어떻게 도와드릴 수 있는지 알려주세요.",
+        },
       },
       testimonials: {
         section_title: "고객의 평가",
@@ -1195,6 +1411,10 @@ const resources = {
         presentation_design: { title: "প্রেজেন্টেশন ডিজাইন", desc: "পেশাদার PowerPoint এবং ডিজিটাল প্রেজেন্টেশন।" },
         system_development: { title: "সিস্টেম ডেভেলপমেন্ট", desc: "কাস্টম সফটওয়্যার এবং পূর্ণ সিস্টেম সমাধান।" },
         campaign_funding: { title: "ক্যাম্পেইন ফান্ডিং", desc: "ডিজিটাল কনটেন্ট এবং ক্যাম্পেইন লঞ্চের জন্য সহায়তা।" },
+        other_service: {
+          title: "অন্যান্য",
+          desc: "আপনার কি অন্য কোন অনুরোধ আছে? আমাদের জানান আমরা কিভাবে সাহায্য করতে পারি।"
+        },
       },
       contact: "যোগাযোগ",
       'nav.home': "হোম",
@@ -1215,6 +1435,14 @@ const resources = {
         personalized: { title: "ব্যক্তিগত পরিষেবা", desc: "আপনার চাহিদা ও বজেট অনুযায়ী সমাধান।" },
         communication: { title: "বাস্তব যোগাযোগ", desc: "আপনার প্রকল্প চলাকালীন আমাদের টিমের সাথে যোগাযোগ রাখুন।" },
         trust: { title: "বিশ্বাস ও নিরাপত্তা", desc: "আপনার ডেটা ও আইডিয়া নিরাপদ এবং গোপনীয়।" },
+        campaign_funding: {
+          title: "ক্যাম্পেইন ফান্ডিং",
+          desc: "ডিজিটাল কনটেন্ট এবং ক্যাম্পেইন লঞ্চের জন্য সহায়তা।"
+        },
+        other_service: {
+          title: "অন্যান্য",
+          desc: "আপনার কি অন্য কোন অনুরোধ আছে? আমাদের জানান আমরা কিভাবে সাহায্য করতে পারি।"
+        },
       },
       testimonials: {
         section_title: "আমাদের ক্লায়েন্টরা কী বলেন",
@@ -1257,6 +1485,10 @@ const resources = {
         presentation_design: { title: "Thiết kế trình bày", desc: "Trình bày PowerPoint và kỹ thuật số chuyên nghiệp." },
         system_development: { title: "Phát triển hệ thống", desc: "Phần mềm tùy chỉnh và giải pháp hệ thống hoàn chỉnh." },
         campaign_funding: { title: "Gây quỹ chiến dịch", desc: "Hỗ trợ nội dung kỹ thuật số và khởi động chiến dịch." },
+        other_service: {
+          title: "Khác",
+          desc: "Bạn có yêu cầu khác không? Hãy cho chúng tôi biết chúng tôi có thể giúp đỡ như thế nào.",
+        },
       },
       contact: "Liên hệ",
       'nav.home': "Trang chủ",
@@ -1277,6 +1509,14 @@ const resources = {
         personalized: { title: "Dịch vụ cá nhân hóa", desc: "Giải pháp phù hợp với nhu cầu và bộ ngân sách của bạn." },
         communication: { title: "Giao tiếp thực sự", desc: "Trong suốt dự án, hãy liên lạc với đội ngũ của chúng tôi." },
         trust: { title: "Tin cậy & Bảo mật", desc: "Dữ liệu và ý tưởng của bạn được an toàn và bảo mật." },
+        campaign_funding: {
+          title: "Gây quỹ chiến dịch",
+          desc: "Hỗ trợ nội dung kỹ thuật số và khởi động chiến dịch.",
+        },
+        other_service: {
+          title: "Khác",
+          desc: "Bạn có yêu cầu khác không? Hãy cho chúng tôi biết chúng tôi có thể giúp đỡ như thế nào.",
+        },
       },
       testimonials: {
         section_title: "Khách hàng nói gì",

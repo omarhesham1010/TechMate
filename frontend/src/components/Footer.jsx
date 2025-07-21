@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
         <div className={styles.infoRow}>
           <a href="mailto:info@techmate.com" className={styles.link} aria-label="Email">
-            <span className={styles.icon}>✉️</span> info@techmate.com
+            <span className={styles.icon}>✉️</span> techmate1010@gmail.com
           </a>
           <a href="#" className={styles.link} aria-label="Twitter">
             <span className={styles.icon}>🐦</span> {t('footer.twitter')}
