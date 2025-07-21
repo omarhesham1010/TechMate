@@ -1,30 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/</loc>
-  </url>
-  <url>
-    <loc>https://example.com/#services</loc>
-  </url>
-  <url>
-    <loc>https://example.com/#request</loc>
-  </url>
-  <url>
-    <loc>https://example.com/#how</loc>
-  </url>
-  <url>
-    <loc>https://example.com/#services?service=Website%20Creation</loc>
-  </url>
-  <url>
-    <loc>https://example.com/#services?service=SEO%20Enhancement</loc>
-  </url>
-  <url>
-    <loc>https://example.com/#services?service=Presentation%20Design</loc>
-  </url>
-  <url>
-    <loc>https://example.com/#services?service=System%20Development</loc>
-  </url>
-  <url>
-    <loc>https://example.com/#services?service=Campaign%20Funding</loc>
+    <loc>https://techmatee.netlify.app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://techmatee.netlify.app/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://techmatee.netlify.app/ar" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://techmatee.netlify.app/fr" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://techmatee.netlify.app/es" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://techmatee.netlify.app/zh" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://techmatee.netlify.app/ru" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://techmatee.netlify.app/de" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://techmatee.netlify.app/tr" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://techmatee.netlify.app/he" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://techmatee.netlify.app/fa" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://techmatee.netlify.app/ur" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://techmatee.netlify.app/hi" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://techmatee.netlify.app/ja" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://techmatee.netlify.app/pt" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://techmatee.netlify.app/it" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://techmatee.netlify.app/id" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://techmatee.netlify.app/th" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://techmatee.netlify.app/ko" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://techmatee.netlify.app/bn" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://techmatee.netlify.app/vi" />
   </url>
 </urlset> 

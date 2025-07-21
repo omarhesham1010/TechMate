@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: /admin
-Disallow: /dashboard
-Sitemap: https://example.com/sitemap.xml 
+Allow: /
+Sitemap: https://techmatee.netlify.app/sitemap.xml 

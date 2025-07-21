@@ -91,6 +91,11 @@ const resources = {
         linkedin: "LinkedIn",
         rights: "All rights reserved.",
       },
+      seo: {
+        title: "TechMate | Digital Services Platform",
+        description: "Get modern websites, SEO optimization, animated presentations & full systems — tailored to your business. 100% online, flexible pricing, and fast delivery from TechMate.",
+        keywords: "web development, SEO services, business websites, tech agency, animated presentations, custom systems, lawyer website, doctor website, entrepreneur tools, TechMate"
+      },
       // ...add all other keys used in your UI
     },
   },
@@ -180,6 +185,11 @@ const resources = {
         twitter: "تويتر",
         linkedin: "لينكدإن",
         rights: "جميع الحقوق محفوظة.",
+      },
+      seo: {
+        title: "تك ميت | منصة الخدمات الرقمية",
+        description: "احصل على مواقع ويب حديثة، تحسين لمحركات البحث، عروض تقديمية متحركة وأنظمة كاملة — مصممة خصيصًا لعملك. 100٪ عبر الإنترنت، أسعار مرنة، وتسليم سريع من تك ميت.",
+        keywords: "تطوير الويب, خدمات تحسين محركات البحث, مواقع ويب للأعمال, وكالة تقنية, عروض تقديمية متحركة, أنظمة مخصصة, موقع ويب لمحامي, موقع ويب لطبيب, أدوات لأصحاب المشاريع, تك ميت"
       },
       // ...add all other keys used in your UI
     },
@@ -271,6 +281,11 @@ const resources = {
         linkedin: "LinkedIn",
         rights: "Tous droits réservés.",
       },
+      seo: {
+        title: "TechMate | Plateforme de Services Numériques",
+        description: "Obtenez des sites web modernes, une optimisation SEO, des présentations animées et des systèmes complets — adaptés à votre entreprise. 100% en ligne, prix flexibles et livraison rapide par TechMate.",
+        keywords: "développement web, services SEO, sites web professionnels, agence tech, présentations animées, systèmes sur mesure, site web avocat, site web médecin, outils entrepreneur, TechMate"
+      },
       // ...add all other keys used in your UI
     },
   },
@@ -361,6 +376,11 @@ const resources = {
         linkedin: "LinkedIn",
         rights: "Todos los derechos reservados.",
       },
+      seo: {
+        title: "TechMate | Plataforma de Servicios Digitales",
+        description: "Obtenga sitios web modernos, optimización SEO, presentaciones animadas y sistemas completos, adaptados a su negocio. 100% en línea, precios flexibles y entrega rápida de TechMate.",
+        keywords: "desarrollo web, servicios SEO, sitios web para empresas, agencia de tecnología, presentaciones animadas, sistemas a medida, sitio web para abogados, sitio web para médicos, herramientas para emprendedores, TechMate"
+      },
       // ...add all other keys used in your UI
     },
   },
@@ -436,6 +456,11 @@ const resources = {
         linkedin: "领英",
         rights: "版权所有。",
       },
+      seo: {
+        title: "泰克梅特 | 数字服务平台",
+        description: "从泰克梅特获取为您的业务量身定制的现代化网站、SEO优化、动画演示和完整系统。100%在线，价格灵活，交付快捷。",
+        keywords: "网站开发, SEO服务, 企业网站, 科技机构, 动画演示, 定制系统, 律师网站, 医生网站, 创业工具, 泰克梅特"
+      },
     },
   },
   ru: {
@@ -509,6 +534,11 @@ const resources = {
         twitter: "Твиттер",
         linkedin: "Линкедин",
         rights: "Все права защищены.",
+      },
+      seo: {
+        title: "ТекМейт | Платформа цифровых услуг",
+        description: "Получите современные веб-сайты, SEO-оптимизацию, анимированные презентации и полные системы, адаптированные для вашего бизнеса. 100% онлайн, гибкие цены и быстрая доставка от ТекМейт.",
+        keywords: "веб-разработка, SEO-услуги, бизнес-сайты, технологическое агентство, анимированные презентации, пользовательские системы, сайт для юриста, сайт для врача, инструменты для предпринимателей, ТекМейт"
       },
     },
   },
@@ -584,6 +614,11 @@ const resources = {
         linkedin: "LinkedIn",
         rights: "Alle Rechte vorbehalten.",
       },
+      seo: {
+        title: "TechMate | Plattform für digitale Dienstleistungen",
+        description: "Erhalten Sie moderne Websites, SEO-Optimierung, animierte Präsentationen und vollständige Systeme – zugeschnitten auf Ihr Unternehmen. 100 % online, flexible Preise und schnelle Lieferung von TechMate.",
+        keywords: "Webentwicklung, SEO-Dienstleistungen, Unternehmenswebsites, Technologieagentur, animierte Präsentationen, benutzerdefinierte Systeme, Anwaltswebsite, Arztwebsite, Unternehmer-Tools, TechMate"
+      },
     },
   },
   tr: {
@@ -657,6 +692,11 @@ const resources = {
         twitter: "Twitter",
         linkedin: "LinkedIn",
         rights: "Tüm hakları saklıdır.",
+      },
+      seo: {
+        title: "TechMate | Dijital Hizmetler Platformu",
+        description: "İşinize özel modern web siteleri, SEO optimizasyonu, animasyonlu sunumlar ve tam sistemler edinin. %100 çevrimiçi, esnek fiyatlandırma ve TechMate'ten hızlı teslimat.",
+        keywords: "web geliştirme, SEO hizmetleri, kurumsal web siteleri, teknoloji ajansı, animasyonlu sunumlar, özel sistemler, avukat web sitesi, doktor web sitesi, girişimci araçları, TechMate"
       },
     },
   },
@@ -732,6 +772,11 @@ const resources = {
         linkedin: "לינקדאין",
         rights: "כל הזכויות שמורות.",
       },
+      seo: {
+        title: "טק-מייט | פלטפורמת שירותים דיגיטליים",
+        description: "קבלו אתרים מודרניים, אופטימיזציה למנועי חיפוש, מצגות אנימציה ומערכות מלאות - המותאמות לעסק שלכם. 100% באינטרנט, תמחור גמיש ומשלוח מהיר מטק-מייט.",
+        keywords: "פיתוח אתרים, שירותי SEO, אתרים לעסקים, סוכנות טכנולוגית, מצגות אנימציה, מערכות מותאמות אישית, אתר לעורך דין, אתר לרופא, כלים ליזמים, טק-מייט"
+      },
     },
   },
   fa: {
@@ -805,6 +850,11 @@ const resources = {
         twitter: "تویتر",
         linkedin: "لینکدإن",
         rights: "تمام حقوق محفوظ است.",
+      },
+      seo: {
+        title: "تک‌میت | پلتفرم خدمات دیجیتال",
+        description: "وب‌سایت‌های مدرن، بهینه‌سازی سئو، ارائه‌های متحرک و سیستم‌های کامل متناسب با کسب‌وکار خود را دریافت کنید. 100% آنلاین، قیمت‌گذاری انعطاف‌پذیر و تحویل سریع از تک‌میت.",
+        keywords: "توسعه وب، خدمات سئو، وب‌سایت‌های تجاری، آژانس فناوری، ارائه‌های متحرک، سیستم‌های سفارشی، وب‌سایت وکلا، وب‌سایت پزشکان، ابزارهای کارآفرینی، تک‌میت"
       },
     },
   },
@@ -880,6 +930,11 @@ const resources = {
         linkedin: "لنکڈ اِن",
         rights: "جملہ حقوق محفوظ ہیں۔",
       },
+      seo: {
+        title: "ٹیک میٹ | ڈیجیٹل سروسز پلیٹ فارم",
+        description: "جدید ویب سائٹس، SEO آپٹیمائزیشن، اینیمیٹڈ پریزنٹیشنز اور مکمل سسٹمز حاصل کریں — جو آپ کے کاروبار کے لیے تیار کیے گئے ہیں۔ 100% آن لائن، لچکدار قیمتوں کا تعین، اور ٹیک میٹ سے تیز ترسیل۔",
+        keywords: "ویب ڈویلپment, SEO سروسز, بزنس ویب سائٹس, ٹیک ایجنسی, اینیمیٹڈ پریزنٹیشنز, کسٹم سسٹمز, وکیل کی ویب سائٹ, ڈاکٹر کی ویب سائٹ, کاروباری اوزار, ٹیک میٹ"
+      },
     },
   },
   hi: {
@@ -953,6 +1008,11 @@ const resources = {
         twitter: "ट्विटर",
         linkedin: "लिंक्डइन",
         rights: "सर्वाधिकार सुरक्षित।",
+      },
+      seo: {
+        title: "टेकमेट | डिजिटल सेवा मंच",
+        description: "आधुनिक वेबसाइट, एसईओ अनुकूलन, एनिमेटेड प्रस्तुतियाँ और पूर्ण सिस्टम प्राप्त करें - आपके व्यवसाय के अनुरूप। 100% ऑनलाइन, लचीला मूल्य निर्धारण, और टेकमेट से तेज़ डिलीवरी।",
+        keywords: "वेब डेवलपमेंट, एसईओ सेवाएं, बिजनेस वेबसाइट, टेक एजेंसी, एनिमेटेड प्रस्तुतियाँ, कस्टम सिस्टम, वकील वेबसाइट, डॉक्टर वेबसाइट, उद्यमी उपकरण, टेकमेट"
       },
     },
   },
@@ -1028,6 +1088,11 @@ const resources = {
         linkedin: "リンクトイン",
         rights: "全著作権所有。",
       },
+      seo: {
+        title: "テックメイト | デジタルサービスプラットフォーム",
+        description: "ビジネスに合わせた最新のウェブサイト、SEO最適化、アニメーション付きプレゼンテーション、および完全なシステムを入手できます。100%オンライン、柔軟な価格設定、そしてテックメイトからの迅速な納品。",
+        keywords: "ウェブ開発, SEOサービス, ビジネスウェブサイト, テックエージェンシー, アニメーション付きプレゼンテーション, カスタムシステム, 弁護士ウェブサイト, 医師ウェブサイト, 起業家ツール, テックメイト"
+      },
     },
   },
   pt: {
@@ -1101,6 +1166,11 @@ const resources = {
         twitter: "Twitter",
         linkedin: "LinkedIn",
         rights: "Todos os direitos reservados.",
+      },
+      seo: {
+        title: "TechMate | Plataforma de Serviços Digitais",
+        description: "Obtenha sites modernos, otimização de SEO, apresentações animadas e sistemas completos — adaptados ao seu negócio. 100% online, preços flexíveis e entrega rápida da TechMate.",
+        keywords: "desenvolvimento web, serviços de SEO, sites para empresas, agência de tecnologia, apresentações animadas, sistemas personalizados, site para advogados, site para médicos, ferramentas para empreendedores, TechMate"
       },
     },
   },
@@ -1176,6 +1246,11 @@ const resources = {
         linkedin: "LinkedIn",
         rights: "Tutti i diritti riservati.",
       },
+      seo: {
+        title: "TechMate | Piattaforma di Servizi Digitali",
+        description: "Ottieni siti web moderni, ottimizzazione SEO, presentazioni animate e sistemi completi, su misura per la tua attività. 100% online, prezzi flessibili e consegna rapida da TechMate.",
+        keywords: "sviluppo web, servizi SEO, siti web aziendali, agenzia tecnologica, presentazioni animate, sistemi personalizzati, sito web per avvocati, sito web per medici, strumenti per imprenditori, TechMate"
+      },
     },
   },
   id: {
@@ -1249,6 +1324,11 @@ const resources = {
         twitter: "Twitter",
         linkedin: "LinkedIn",
         rights: "Hak cipta dilindungi undang-undang.",
+      },
+      seo: {
+        title: "TechMate | Platform Layanan Digital",
+        description: "Dapatkan situs web modern, optimisasi SEO, presentasi animasi & sistem lengkap — yang disesuaikan untuk bisnis Anda. 100% online, harga fleksibel, dan pengiriman cepat dari TechMate.",
+        keywords: "pengembangan web, layanan SEO, situs web bisnis, agensi teknologi, presentasi animasi, sistem kustom, situs web pengacara, situs web dokter, alat pengusaha, TechMate"
       },
     },
   },
@@ -1324,6 +1404,11 @@ const resources = {
         linkedin: "ลิงก์อิน",
         rights: "สงวนลิขสิทธิ์ทั้งหมด",
       },
+      seo: {
+        title: "เทคเมท | แพลตฟอร์มบริการดิจิทัล",
+        description: "รับเว็บไซต์ที่ทันสมัย การปรับแต่ง SEO การนำเสนอภาพเคลื่อนไหว และระบบที่สมบูรณ์แบบ — ที่เหมาะกับธุรกิจของคุณ 100% ออนไลน์ ราคาที่ยืดหยุ่น และการจัดส่งที่รวดเร็วจากเทคเมท",
+        keywords: "การพัฒนาเว็บ, บริการ SEO, เว็บไซต์ธุรกิจ, เอเจนซี่เทคโนโลยี, การนำเสนอภาพเคลื่อนไหว, ระบบที่กำหนดเอง, เว็บไซต์ทนายความ, เว็บไซต์แพทย์, เครื่องมือสำหรับผู้ประกอบการ, เทคเมท"
+      },
     },
   },
   ko: {
@@ -1397,6 +1482,11 @@ const resources = {
         twitter: "트위터",
         linkedin: "링크드인",
         rights: "모든 권리 보유.",
+      },
+      seo: {
+        title: "테크메이트 | 디지털 서비스 플랫폼",
+        description: "비즈니스에 맞춘 현대적인 웹사이트, SEO 최적화, 애니메이션 프레젠테이션 및 전체 시스템을 이용하세요. 100% 온라인, 유연한 가격 책정 및 테크메이트의 빠른 배송.",
+        keywords: "웹 개발, SEO 서비스, 비즈니스 웹사이트, 기술 에이전시, 애니메이션 프레젠테이션, 맞춤형 시스템, 변호사 웹사이트, 의사 웹사이트, 기업가 도구, 테크메이트"
       },
     },
   },
@@ -1472,6 +1562,11 @@ const resources = {
         linkedin: "লিঙ্কডইন",
         rights: "সমস্ত অধিকার সংরক্ষিত।",
       },
+      seo: {
+        title: "টেকমেট | ডিজিটাল পরিষেবা প্ল্যাটফর্ম",
+        description: "আধুনিক ওয়েবসাইট, এসইও অপ্টিমাইজেশান, অ্যানিমেটেড উপস্থাপনা এবং সম্পূর্ণ সিস্টেম পান — আপনার ব্যবসার জন্য বিশেষভাবে তৈরি। ১০০% অনলাইন, নমনীয় মূল্য নির্ধারণ এবং টেকমেট থেকে দ্রুত ডেলিভারি।",
+        keywords: "ওয়েব ডেভেলপমেন্ট, এসইও পরিষেবা, ব্যবসায়িক ওয়েবসাইট, প্রযুক্তি সংস্থা, অ্যানিমেটেড উপস্থাপনা, কাস্টম সিস্টেম, আইনজীবীর ওয়েবসাইট, ডাক্তারের ওয়েবসাইট, উদ্যোক্তা সরঞ্জাম, টেকমেট"
+      },
     },
   },
   vi: {
@@ -1545,6 +1640,11 @@ const resources = {
         twitter: "Twitter",
         linkedin: "LinkedIn",
         rights: "Đã đăng ký bản quyền.",
+      },
+      seo: {
+        title: "TechMate | Nền tảng Dịch vụ Kỹ thuật số",
+        description: "Nhận các trang web hiện đại, tối ưu hóa SEO, bản trình bày hoạt hình và hệ thống đầy đủ — phù hợp với doanh nghiệp của bạn. 100% trực tuyến, giá cả linh hoạt và giao hàng nhanh chóng từ TechMate.",
+        keywords: "phát triển web, dịch vụ SEO, trang web doanh nghiệp, công ty công nghệ, bản trình bày hoạt hình, hệ thống tùy chỉnh, trang web luật sư, trang web bác sĩ, công cụ cho doanh nhân, TechMate"
       },
     },
   },

@@ -13,6 +13,7 @@ import './i18n';
 import i18n from './i18n';
 import { languages } from './i18n';
 import { AuthProvider, useAuth } from './components/auth/AuthContext';
+import SeoHelmet from './components/SeoHelmet';
 
 const RTL_LANGS = ['ar', 'he', 'fa', 'ur'];
 
@@ -104,19 +105,7 @@ function App() {
     <AuthProvider>
       <AppContent>
         <div className={`app-wrapper ${theme === 'dark' ? 'dark-mode' : 'light-mode'}`} style={{ transition: 'direction 0.3s' }}> 
-          <Helmet>
-            <title>TechMate | Digital Services Platform</title>
-            <meta name="description" content="TechMate offers web development, SEO, presentations, and system building. Modern, responsive, and animated digital services for any business." />
-            <meta property="og:title" content="TechMate | Digital Services Platform" />
-            <meta property="og:description" content="Order web development, SEO, presentations, and more. Fast, professional, and tailored to your needs." />
-            <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://example.com/" />
-            <meta property="og:image" content="/og-image.png" />
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content="TechMate | Digital Services Platform" />
-            <meta name="twitter:description" content="Order web development, SEO, presentations, and more. Fast, professional, and tailored to your needs." />
-            <meta name="twitter:image" content="/og-image.png" />
-          </Helmet>
+          <SeoHelmet />
           <Header theme={theme} toggleTheme={toggleTheme} language={language} onLanguageChange={handleLanguageChange} />
           <main style={{ paddingTop: 64 }}>
             <section
