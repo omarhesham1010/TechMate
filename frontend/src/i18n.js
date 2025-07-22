@@ -42,6 +42,7 @@ const resources = {
       toggle_dark_mode: "Toggle dark mode",
       sign_in: "Sign In",
       open_menu: "Open menu",
+      sign_out: "Sign Out",
       hero: {
         headline: "Elevate Your Digital Presence",
         with_brand: "with {{brand}}",
@@ -137,6 +138,7 @@ const resources = {
       toggle_dark_mode: "تبديل الوضع الداكن",
       sign_in: "تسجيل الدخول",
       open_menu: "فتح القائمة",
+      sign_out: "تسجيل الخروج",
       hero: {
         headline: "ارتقِ بحضورك الرقمي",
         with_brand: "مع {{brand}}",
@@ -232,6 +234,7 @@ const resources = {
       toggle_dark_mode: "Activer le mode sombre",
       sign_in: "Se connecter",
       open_menu: "Ouvrir le menu",
+      sign_out: "Déconnexion",
       hero: {
         headline: "Élevez votre présence digitale",
         with_brand: "avec {{brand}}",
@@ -327,6 +330,7 @@ const resources = {
       toggle_dark_mode: "Activar modo oscuro",
       sign_in: "Iniciar sesión",
       open_menu: "Abrir menú",
+      sign_out: "Cerrar sesión",
       hero: {
         headline: "Eleva tu presencia digital",
         with_brand: "con {{brand}}",
@@ -407,6 +411,7 @@ const resources = {
       toggle_dark_mode: "切换夜间模式",
       sign_in: "登录",
       open_menu: "打开菜单",
+      sign_out: "退出登录",
       hero: {
         headline: "提升您的数字影响力",
         with_brand: "与{{brand}}",
@@ -486,6 +491,7 @@ const resources = {
       toggle_dark_mode: "Переключить темный режим",
       sign_in: "Войти",
       open_menu: "Открыть меню",
+      sign_out: "Выйти",
       hero: {
         headline: "Поднимите свое цифровое присутствие",
         with_brand: "с {{brand}}",
@@ -565,6 +571,7 @@ const resources = {
       toggle_dark_mode: "Dunkelmodus umschalten",
       sign_in: "Anmelden",
       open_menu: "Menü öffnen",
+      sign_out: "Abmelden",
       hero: {
         headline: "Steigern Sie Ihre digitale Präsenz",
         with_brand: "mit {{brand}}",
@@ -644,6 +651,7 @@ const resources = {
       toggle_dark_mode: "Karanlık modu değiştir",
       sign_in: "Giriş yap",
       open_menu: "Menüyü aç",
+      sign_out: "Çıkış Yap",
       hero: {
         headline: "Sayısal görünürlüğünüzü artırın",
         with_brand: "{{brand}} ile",
@@ -723,6 +731,7 @@ const resources = {
       toggle_dark_mode: "החלף מצב כהה",
       sign_in: "התחברות",
       open_menu: "פתח תפריט",
+      sign_out: "התנתק",
       hero: {
         headline: "הגבר זמינות דיגיטלית שלך",
         with_brand: "עם {{brand}}",
@@ -802,6 +811,7 @@ const resources = {
       toggle_dark_mode: "تغییر مود تاریک",
       sign_in: "ورود",
       open_menu: "باز کردن منو",
+      sign_out: "خروج",
       hero: {
         headline: "ارتقا دهید حضور دیجیتالی خود را",
         with_brand: "با {{brand}}",
@@ -881,6 +891,7 @@ const resources = {
       toggle_dark_mode: "ڈارک موڈ تبدیل کریں",
       sign_in: "سائن ان",
       open_menu: "مینو کھولیں",
+      sign_out: "لاگ آؤٹ",
       hero: {
         headline: "اپنی ڈیجیٹل موجودگی کو بڑھائیں",
         with_brand: "{{brand}} کے ساتھ",
@@ -960,6 +971,7 @@ const resources = {
       toggle_dark_mode: "डार्क मोड टॉगल करें",
       sign_in: "साइन इन",
       open_menu: "मेनू खोलें",
+      sign_out: "साइन आउट",
       hero: {
         headline: "अपनी डिजिटल उपस्थिति बढ़ाएँ",
         with_brand: "{{brand}} के साथ",
@@ -1039,6 +1051,7 @@ const resources = {
       toggle_dark_mode: "ダークモード切替",
       sign_in: "サインイン",
       open_menu: "メニューを開く",
+      sign_out: "ログアウト",
       hero: {
         headline: "デジタルプレゼンスを高めよう",
         with_brand: "{{brand}}と共に",
@@ -1118,6 +1131,7 @@ const resources = {
       toggle_dark_mode: "Alternar modo escuro",
       sign_in: "Entrar",
       open_menu: "Abrir menu",
+      sign_out: "Sair",
       hero: {
         headline: "Eleve sua presença digital",
         with_brand: "com {{brand}}",
@@ -1197,6 +1211,7 @@ const resources = {
       toggle_dark_mode: "Attiva modalità scura",
       sign_in: "Accedi",
       open_menu: "Apri menu",
+      sign_out: "Disconnetti",
       hero: {
         headline: "Eleva la tua presenza digitale",
         with_brand: "con {{brand}}",
@@ -1262,7 +1277,7 @@ const resources = {
         website_creation: { title: "Pembuatan Website", desc: "Website modern dan responsif yang disesuaikan untuk bisnis Anda." },
         seo_enhancement: { title: "Peningkatan SEO", desc: "Tingkatkan kehadiran online dan peringkat pencarian Anda." },
         presentation_design: { title: "Desain Presentasi", desc: "Presentasi PowerPoint dan digital profesional." },
-        system_development: { title: "Pengembangan Sistem", desc: "Perangkat lunak khusus dan solusi sistem lengkap." },
+        system_development: { title: "Desarrollo de sistemas", desc: "Perangkat lunak khusus dan solusi sistem lengkap." },
         campaign_funding: { title: "Pendanaan Kampanye", desc: "Dukungan untuk konten digital dan lancar kampanye." },
         other_service: {
           title: "Lainnya",
@@ -1276,6 +1291,7 @@ const resources = {
       toggle_dark_mode: "Aktifkan mode gelap",
       sign_in: "Masuk",
       open_menu: "Buka menu",
+      sign_out: "Keluar",
       hero: {
         headline: "Tingkatkan Kehadiran Digital Anda",
         with_brand: "dengan {{brand}}",
@@ -1308,7 +1324,7 @@ const resources = {
         name: "Nama Anda",
         company: "Nama Perusahaan",
         job: "Jabatan",
-        phone: "Nomor Telepon",
+        phone: "Telepon",
         email: "Email Anda",
         select_service: "Pilih Layanan",
         budget: "Anggaran (opsional)",
@@ -1355,6 +1371,7 @@ const resources = {
       toggle_dark_mode: "เปิดโหมดมืด",
       sign_in: "เข้าสู่ระบบ",
       open_menu: "เปิดเมนู",
+      sign_out: "ออกจากระบบ",
       hero: {
         headline: "ยกระดับการแสดงตัวตนดิจิทัลของคุณ",
         with_brand: "กับ {{brand}}",
@@ -1434,6 +1451,7 @@ const resources = {
       toggle_dark_mode: "다크 모드 전환",
       sign_in: "로그인",
       open_menu: "메뉴 열기",
+      sign_out: "로그아웃",
       hero: {
         headline: "디지털 존재감을 높이세요",
         with_brand: "{{brand}}와 함께",
@@ -1513,6 +1531,7 @@ const resources = {
       toggle_dark_mode: "ডার্ক মোড চালু করুন",
       sign_in: "সাইন ইন",
       open_menu: "মেনু খুলুন",
+      sign_out: "সাইন আউট",
       hero: {
         headline: "আপনার ডিজিটাল উপস্থিতি বাড়ান",
         with_brand: "{{brand}}-এর সাথে",
@@ -1592,6 +1611,7 @@ const resources = {
       toggle_dark_mode: "Bật chế độ tối",
       sign_in: "Đăng nhập",
       open_menu: "Mở menu",
+      sign_out: "Đăng xuất",
       hero: {
         headline: "Nâng tầm hiện diện kỹ thuật số của bạn",
         with_brand: "với {{brand}}",
